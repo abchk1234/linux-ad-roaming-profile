@@ -1,0 +1,1 @@
+10 * * * * /usr/local/bin/scripts/sync-user-profile.sh > /tmp/sync-user-profile.log 2>&1

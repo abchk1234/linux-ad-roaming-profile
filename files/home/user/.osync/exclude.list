@@ -1,0 +1,47 @@
+# imported from csync_exclude!
+
+# Exclude patterns (one per line).  Blank lines in the file and
+# lines starting with '#' are ignored.
+
+.beagle
+.ccache
+.csync*
+.fontconfig
+.java/
+.jpi_cache
+.kde*/cache-*
+.kde*/socket-*
+.kde*/tmp-*
+.mozilla/plugins
+.mozilla/firefox/*/Cache
+.netscape/cache/
+.snapshot
+.thumbnails
+
+.cache/
+.thumbnails/
+.mozilla/firefox/*/cache2/
+.mozilla/firefox/*/thumbnails/
+.gnupg/
+.local/share/zeitgeist/
+.local/share/gvfs-metadata/
+
+# exclude all object file
+# *.o
+
+# exclude all bak files
+# *.bak
+
+# shared folders
+Public/Accounts/
+Public/Allocation/
+Public/HR/
+Public/Rework/
+Public/Marketing/
+Public/Rework/
+Public/Sales/
+Public/Support/
+Public/Tech/
+
+# skip trash
+#.Trash-*

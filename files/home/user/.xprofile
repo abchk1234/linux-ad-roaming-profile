@@ -1,0 +1,5 @@
+# ~/.xprofile
+# https://askubuntu.com/a/313863
+
+# data sync
+/usr/local/bin/scripts/init-sync.sh
