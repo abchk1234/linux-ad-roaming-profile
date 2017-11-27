@@ -23,11 +23,11 @@ if [ -d "$REMOTE_FOLDER" ]; then
 fi
 
 # need to kill old notifications as they seem to persist
-pkill "display-notification-repeatedly"
+pkill "display-notific"  # name can be confirmed via pgrep -l
 # CHECK IF USER DIRECTORY MOUNTED
 if ! /usr/local/bin/scripts/check-nerdy-mount.sh; then
         logger "[nerdy-lan] User directory for $USER not mounted"
-        /usr/local/bin/scripts/display-notification-repeatedly.sh &
+        /usr/local/bin/scripts/display-notification-repeatedly.sh > /tmp/sync-user-profile.log 2>&1 &
 else
 	# try syncing user folder
 	if [ "$SIZE_DIFF" -gt 100000 ]; then
