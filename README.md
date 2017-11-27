@@ -5,7 +5,7 @@ and a copy of the user profile stored on a central server and mounted on the loc
 
 The task is to keep the profiles in sync.
 
-Related is post [here](https://abchk.in/blog/roaming-profile-on-linux-in-2017/).
+[Related post](https://abchk.in/blog/roaming-profile-on-linux-in-2017/).
 
 *P.S.*
 Tested on Ubuntu 16.04.
