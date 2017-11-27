@@ -27,7 +27,7 @@ pkill "display-notific"  # name can be confirmed via pgrep -l
 # CHECK IF USER DIRECTORY MOUNTED
 if ! /usr/local/bin/scripts/check-nerdy-mount.sh; then
         logger "[nerdy-lan] User directory for $USER not mounted"
-        /usr/local/bin/scripts/display-notification-repeatedly.sh > /tmp/sync-user-profile.log 2>&1 &
+        /usr/local/bin/scripts/display-notification-repeatedly.sh &
 else
 	# try syncing user folder
 	if [ "$SIZE_DIFF" -gt 100000 ]; then
@@ -36,7 +36,7 @@ else
 	else
 		notify-send -t 10000 -a nerdy-lan -i info "Data sync initiated."
 	fi
-	if ! /usr/local/bin/scripts/sync-user-profile.sh -q; then
+	if ! /usr/local/bin/scripts/sync-user-profile.sh > /tmp/sync-user-profile.log 2>&1; then
 		notify-send -u critical -a nerdy-lan -i error "Failed to sync, contact system administrator for more info."
 	fi
 fi
