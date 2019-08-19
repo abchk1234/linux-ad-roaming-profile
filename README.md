@@ -1,9 +1,9 @@
 ### Implementing roaming user profile on Linux.
 
-The basic concept is that there is a local copy of the profile of a user authenticated via AD, say at `/usr/local/DOMAIN/user`,
-and a copy of the user profile stored on a central server and mounted on the local system, say at `/usr/roaming/DOMAIN/user`.
+* There is a local copy of the user profile, say at `/usr/local/DOMAIN/user`, and
+* There is a remote copy of the user profile, _stored on a central server and mounted on the local system_, say at `/usr/roaming/DOMAIN/user`.
 
-The task is to keep the profiles in sync.
+The task is to keep these profiles in sync.
 
 [Related post](https://abchk1234.wordpress.com/2017/11/27/roaming-profile-on-linux-in-2017/).
 
